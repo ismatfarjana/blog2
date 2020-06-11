@@ -1,19 +1,21 @@
-<p>
+<p id="notice"><%= notice %></p>
+
+<h1>
   <strong>Name:</strong>
   <%= @article.title %>
-</p>
+</h1>
 
-<p>
+<h2>
   <strong>Author:</strong>
   <%= @article.author %>
-</p>
+</h2>
 
 <p>
   <hr>
   <%= @article.body %>
 </p>
 
-<!--<%#= link_to 'Edit', edit_article_path(@article) %> |-->
+<%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
 
 

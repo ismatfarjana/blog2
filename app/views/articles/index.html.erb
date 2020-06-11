@@ -2,4 +2,35 @@
 <!--<h2>Tales of Doctors</h2>-->
 <hr>
 <p>Welcome to the homepage</p>
-<%= @articles %>
+<br>
+<br>
+<table class="center">
+  <thead>
+  <tr>
+    <th>Blog Title</th>
+    <th>Writter</th>
+    <th>Post</th>
+    <th colspan="10"></th>
+  </tr>
+  </thead>
+
+
+  <tbody>
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.author %></td>
+      <td><%= article.body %></td>
+      <td><%= link_to 'Show', article %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<br>
+<hr>
+
+ <p>
+   <%= link_to 'Add a New Post', new_article_path %>
+ </p>

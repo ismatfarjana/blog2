@@ -25,6 +25,18 @@ class ArticlesController < ApplicationController
 
   end
 
+  def update
+    if @article.update(article_params)
+      redirect_to @article, notice: 'Article was successfully updated.'
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @article.destroy
+    redirect_to articles_url, notice: 'Article was successfully destroyed.'
+  end
 
   private
 
