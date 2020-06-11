@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@1,200&display=swap');
+
+h1 {
+    color: darkblue;
+    text-align: center;
+
+    font-family: 'Metal Mania', cursive;
+    font-size: 70px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
