@@ -118,13 +118,11 @@ body {
 .top_blogger {
     text-align: left;
     padding-left: 5rem;
-    padding-right: 75rem;
+
 }
 
 .top_blogger h4 {
     font-size: 15px;
-    border-bottom: 1px solid #666666;
-
     margin: 0;
 }
 
