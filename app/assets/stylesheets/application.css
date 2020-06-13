@@ -93,10 +93,11 @@ body {
 }
 
   /*new form */
-.new_form_heading {
+.new_form_heading h1{
     font-family: 'Metal Mania', cursive;
     font-size: 40px;
     padding: 1rem 0;
+    margin: 1.5rem 0 0 0;
 }
 
 /*design show_comment*/
