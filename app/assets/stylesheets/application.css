@@ -22,8 +22,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
+    /*background-image: url("../images/background.jpg");*/
+
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+
+
 }
 
 .top_heading h1 {
