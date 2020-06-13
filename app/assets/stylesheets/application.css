@@ -49,7 +49,7 @@ body {
     text-align: left;
     margin-left:auto;
     margin-right:auto;
-    padding: 1rem 15rem;
+    padding: 0 15rem;
 }
 
 
@@ -67,7 +67,7 @@ body {
 
 .all_posts .post {
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     padding: 5px;
 }
 
@@ -110,7 +110,28 @@ body {
 
 
 .show_comment p {
-    font-size: 8px;
+    font-size: 10px;
+}
+
+/*top blogger*/
+
+.top_blogger {
+    text-align: left;
+    padding-left: 5rem;
+    padding-right: 75rem;
+}
+
+.top_blogger h4 {
+    font-size: 15px;
+    border-bottom: 1px solid #666666;
+
+    margin: 0;
+}
+
+.top_blogger p {
+    color: darkred;
+    margin: 0;
+
 }
 
 footer {

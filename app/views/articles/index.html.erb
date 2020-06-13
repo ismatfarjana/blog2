@@ -8,6 +8,19 @@
     </p>
 </section>
 
+<section class="top_blogger">
+  <h4>
+    Top Blogger: <br>
+  </h4>
+    <% @articles.each do |article| %>
+    <p>
+      <%= article.author %> <br>
+    </p>
+    <% end %>
+
+
+</section>
+
 
  <div class="all_posts">
     <% @articles.each do |article| %>
@@ -20,7 +33,7 @@
         <%= article.author %>, created at <%= article.created_at %>
       </div>
       <div class="post">
-        <%= article.body %>
+        <%= article.body[0..20] %> ....
       </div>
       <%= link_to 'Continue Reading..', article %>
    <% end %>
