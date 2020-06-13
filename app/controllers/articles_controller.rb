@@ -10,6 +10,7 @@ class ArticlesController < ApplicationController
 
   def show
     @comment = Comment.new
+    @all_comments = Comment.where(article_id: params[:id])
   end
 
 
