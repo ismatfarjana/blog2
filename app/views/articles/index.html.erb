@@ -1,37 +1,35 @@
-<h1>BLOG  </h1>
-<!--<h2>Tales of Doctors</h2>-->
-<hr>
-<p>Welcome to the homepage</p>
-<br>
-<br>
-<table class="center">
-  <thead>
-  <tr>
-    <th>Blog Title</th>
-    <th>Writer</th>
-    <th>Post</th>
-    <th colspan="10"></th>
-  </tr>
-  </thead>
+<section class="top_heading">
+    <h1>BLOG  </h1>
+    <!--<h2>Tales of Doctors</h2>-->
+    <hr>
+    <p>Welcome to the homepage
+      <br>
+      <%= link_to 'Add a New Post', new_article_path %>
+    </p>
+</section>
 
 
-  <tbody>
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.author %></td>
-      <td><%= article.body %></td>
-      <td><%= link_to 'Show', article %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
-<br>
-<hr>
+ <div class="all_posts">
+    <% @articles.each do |article| %>
+     <div class="post_heading">
+         <h2>
+          <%= article.title %>
+         </h2>
+      </div>
+      <div class="post_author">
+        <%= article.author %>, created at <%= article.created_at %>
+      </div>
+      <div class="post">
+        <%= article.body %>
+      </div>
+      <%= link_to 'Show', article %>
+   <% end %>
+      <%#= link_to 'Edit', edit_article_path(article) %>
+      <%#= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
+<!--   all post end-->
 
- <p>
-   <%= link_to 'Add a New Post', new_article_path %>
- </p>
+ <footer>
+   Copyright © 2020 SyedaIsmatFarjana, All rights reserved
+ </footer>
 

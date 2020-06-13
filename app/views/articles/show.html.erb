@@ -19,11 +19,12 @@
 <%= link_to 'Back', articles_path %><br>
 
 <!--show comment-->
-<div class="show_comment">
+<section class="show_comment">
+   <h2>Comments:</h2>
   <% @all_comments.each do |comment|  %>
     <%= comment.body %>
   <% end %>
-</div>
+</section>
 <!-- comment form-->
 <%= form_with(url: "/articles/#{@article.id}/comments", method:"post") do |form| %>
   <% if @comment.errors.any? %>

@@ -19,59 +19,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=IBM+Plex+Sans:wght@300&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
 
-h1 {
+.top_heading h1 {
     color: darkblue;
     text-align: center;
-
     font-family: 'Metal Mania', cursive;
     font-size: 70px;
-}
-
-h2 {
     text-align: center;
-    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 40px 0 0 0;
+    padding: 20px 0 10px 0;
 }
 
-p {
-    text-align: center;
-    font-family: 'Montserrat', cursive;
-    font-size: 30px;
-    text-decoration: none;
+.top_heading p {
+    padding: 0 5rem;
+    text-align: right;
 }
 
-table.center {
+.all_posts {
+    text-align: left;
     margin-left:auto;
     margin-right:auto;
+    padding: 1rem 5rem;
 }
 
-table {
-    border-collapse: collapse;
-    width: 70%;
-}
-table td, table th {
-    padding: 10px;
+
+.all_posts h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-bottom: 0;
 }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
+.all_posts .post_author {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #999999;
+}
 
-table tr:hover {background-color: #ddd;}
+.all_posts .post {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    padding: 5px;
+}
 
-table th {
+
+
+.post_heading >> h2 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 20px;
-    padding-top: 11px;
-    padding-bottom: 12px;
     text-align: left;
-    background-color: #4CAF50;
-    color: white;
+    color: black;
 }
 
-table tr {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 15px;
+
+
+
+
+
+
+/*design show_comment*/
+
+.show_comment {
+    text-align: left;
+    padding: 0 5rem;
+}
+
+footer {
+
 }
