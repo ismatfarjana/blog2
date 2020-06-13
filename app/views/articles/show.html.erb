@@ -26,8 +26,8 @@
 <section class="show_comment">
    <h2>Comments:</h2>
   <% @all_comments.each do |comment|  %>
-    <p><%= comment.created_at %></p>
-    <%= comment.body %><br><br>
+    <%= comment.body %>
+    <p>Comment was created at <%= comment.created_at %></p><br><br>
   <% end %>
 </section>
 <!-- comment form-->
