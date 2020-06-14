@@ -204,6 +204,27 @@ a:visited {
     height: 1rem;
 }
 
+
+  /*LOGIN PAGE*/
+
+
+.log_in_page_body {
+    margin: 3rem 5rem;
+    padding: 2rem 5rem;
+    background-color: rgba(194, 210, 225, 0.6);
+}
+
+
+.log_in_page h1 {
+    text-shadow: 1px 1px black;
+    font-family: 'Metal Mania', cursive;
+    font-size: 3vw;
+    color: lightsalmon;
+}
+
+
+
 footer {
+
  padding: 1.5rem 1rem;
 }
