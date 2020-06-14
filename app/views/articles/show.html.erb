@@ -13,10 +13,12 @@
       <p>created at <%= @article.created_at %></p>
     </h2>
 </div>
-<p>
+
   <hr>
-  <%= @article.body %>
-</p>
+
+<div class="post_body">
+<p><%= @article.body %></p>
+
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %><br>
@@ -26,10 +28,14 @@
 <section class="show_comment">
    <h2>Comments:</h2>
   <% @all_comments.each do |comment|  %>
-    <%= comment.body %>
-    <p>Comment was created at <%= comment.created_at %></p><br><br>
+    <p>
+      <%= comment.body.capitalize %><br>
+    <div class="comment_time">Comment was created at <%= comment.created_at %></div></p><br><br>
   <% end %>
 </section>
+
+</div>
+
 <!-- comment form-->
 <%= form_with(url: "/articles/#{@article.id}/comments", method:"post") do |form| %>
   <% if @comment.errors.any? %>
@@ -47,7 +53,7 @@
 
 <br>
   <div class="field">
-    <% form.label :body %><br>
+    Post comment<% form.label :body %><br>
     <%= form.text_area :body %>
   </div>
 

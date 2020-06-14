@@ -42,10 +42,20 @@ body {
     width: 70px;
 }
 
+a:link {
+    color: greenyellow;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+}
 
-/*navigation to home page from log in page*/
+a:visited {
+    color: greenyellow;
 
-/*.navbar-nav mr-auto .nav-item active .nav-link a {*/
+}
+
+/*!*navigation to home page from log in page*!*/
+
+/*p .navbar-nav mr-auto .nav-item active .nav-link a {*/
 /*    padding: 1rem;*/
 /*}*/
 
@@ -123,7 +133,7 @@ body {
 
 
 .one_post_author p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .one_post_heading h1 {
@@ -141,17 +151,29 @@ body {
     margin: 1.5rem 0 0 0;
 }
 
+
+.post_body {
+    padding: 1rem 0 0 0;
+    background-color: rgba(194, 210, 225, 0.6);
+    margin: 0 15rem;
+}
 /*design show_comment*/
 
 .show_comment {
     text-align: left;
-    padding: 0 15rem;
+    padding: 0 5rem;
 }
 
 
 
 .show_comment p {
-    font-size: 10px;
+    font-size: 1.3vw;
+    color: ;
+}
+
+.comment_time {
+    font-size: 0.9vw;
+    color: #212221;
 }
 
 /*top blogger*/
@@ -175,6 +197,10 @@ body {
     margin: 0;
 
 
+}
+
+.actions {
+    height: 1rem;
 }
 
 footer {
