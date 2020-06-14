@@ -35,7 +35,10 @@ body {
     text-align: center;
     font-size: 1vw;
     padding: 1rem;
-    background-color: #666666;
+    background: rgba(0,133,255,0.72);
+    background: linear-gradient(271deg,rgba(0,133,255,0.72) 0%, rgba(0,26,255,0) 80%);
+    background: -webkit-linear-gradient(271deg,rgba(0,133,255,0.72) 0%, rgba(0,26,255,0) 80%);
+    background: -moz-linear-gradient(271deg,rgba(0,133,255,0.72) 0%, rgba(0,26,255,0) 80%);
 }
 
 .background_image {
@@ -54,6 +57,10 @@ a:visited {
 
 }
 
+a:hover {
+    color: cornflowerblue;
+}
+
 /*!*navigation to home page from log in page*!*/
 
 /*p .navbar-nav mr-auto .nav-item active .nav-link a {*/
@@ -63,7 +70,7 @@ a:visited {
 
 
 .top_heading h1 {
-    color: lightsalmon;
+    color: whitesmoke;
     text-align: center;
     text-shadow: 1px 1px black;
     font-family: 'Metal Mania', cursive;
@@ -78,29 +85,23 @@ a:visited {
     padding: 1rem 0rem;
     text-align: right;
     color: antiquewhite;
+    text-shadow: 1px 1px black;
 }
 
-.top_heading a {
-    color: greenyellow;
-    text-decoration: none;
-    text-shadow: 2px 1px black;
-}
 
-.top_heading a:visited {
-    color: greenyellow;
-
-}
-
-.top_heading a:hover {
-    color: cornflowerblue;
-}
 
 .all_posts {
     text-align: left;
     margin-left:10rem;
     margin-right:10rem;
-    padding: 0 9rem;
-    background-color: rgba(194, 210, 225, 0.6);
+    padding: 1rem 9rem;
+    background-color: RGBA(153,200,203,0.29);
+
+}
+.all_posts:hover {
+    box-shadow: 8px 9px 7px 4px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 8px 9px 7px 4px rgba(0,0,0,0.64);
+    -moz-box-shadow: 8px 9px 7px 4px rgba(0,0,0,0.64);
 }
 
 
@@ -155,9 +156,15 @@ a:visited {
 
 .post_body {
     padding: 1rem 0 0 0;
-    background-color: rgba(194, 210, 225, 0.6);
+    background-color: RGBA(153,200,203,0.29);
     margin: 0 15rem;
+    box-shadow: 8px 9px 7px 4px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 8px 9px 7px 4px rgba(0,0,0,0.64);
+    -moz-box-shadow: 8px 9px 7px 4px rgba(0,0,0,0.64);
 }
+
+
+
 /*design show_comment*/
 
 .show_comment {
@@ -181,20 +188,22 @@ a:visited {
 
 .top_blogger {
     text-align: left;
-    padding-left: 5rem;
-
+    margin-left: 5rem;
+    border-left: 1px solid black;
+    padding-left: 3px
 }
 
 .top_blogger h4 {
     font-size: 1.1vw;
     margin: 0;
-    color: lightsalmon;
-    text-shadow: 2px 1px black;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
 
 }
 
 .top_blogger p {
-    color: hotpink;
+    color: black;
+    text-shadow: 1px 1px navajowhite;
     margin: 0;
 
 
@@ -221,8 +230,31 @@ a:visited {
     font-size: 3vw;
     color: lightsalmon;
 }
+.sign_up_page_body {
+    margin: 3rem 5rem;
+    padding: 2rem 5rem;
+    background-color: rgba(194, 210, 225, 0.6);
+}
+
+.sign_up_page h1 {
+    text-shadow: 1px 1px black;
+    font-family: 'Metal Mania', cursive;
+    font-size: 3vw;
+    color: lightsalmon;
+}
 
 
+.actions .button{
+    background-color: green;
+    font-family: 'Open Sans', sans-serif;
+    color: floralwhite;
+    width: 15vw;
+    height: auto;
+}
+
+.actions .button:hover {
+
+}
 
 footer {
 
