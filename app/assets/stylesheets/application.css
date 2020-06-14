@@ -21,53 +21,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat+Alternates:wght@500&family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-body {
-    /*background-image: url("../images/background.jpg");*/
+/*html {*/
+/*    background: url("../images/background_image/background.jpg");*/
+/*}*/
 
+body {
+    background-image: url("background_image/background_flower.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-height: inherit;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-
-
+    font-size: 1vw;
+    padding: 1rem;
 }
 
+.background_image {
+    height: 70px;
+    width: 70px;
+}
+
+
+/*navigation to home page from log in page*/
+
+/*.navbar-nav mr-auto .nav-item active .nav-link a {*/
+/*    padding: 1rem;*/
+/*}*/
+
+
+
 .top_heading h1 {
-    color: darkblue;
+    color: lightsalmon;
     text-align: center;
+    text-shadow: 1px 1px black;
     font-family: 'Metal Mania', cursive;
-    font-size: 70px;
+    font-size: 2.3vw;
     text-align: center;
-    margin: 40px 0 0 0;
+    margin: 0 0 0 0;
     padding: 20px 0 10px 0;
 }
 
 .top_heading p {
-    padding: 0 14rem;
+    margin: 0 10rem;
+    padding: 1rem 0rem;
     text-align: right;
+    color: antiquewhite;
+}
+
+.top_heading a {
+    color: greenyellow;
+    text-decoration: none;
+    text-shadow: 2px 1px black;
+}
+
+.top_heading a:visited {
+    color: greenyellow;
+
+}
+
+.top_heading a:hover {
+    color: cornflowerblue;
 }
 
 .all_posts {
     text-align: left;
-    margin-left:auto;
-    margin-right:auto;
-    padding: 0 15rem;
+    margin-left:10rem;
+    margin-right:10rem;
+    padding: 0 9rem;
+    background-color: rgba(194, 210, 225, 0.6);
 }
 
 
 .all_posts h2 {
     font-family: 'Montserrat Alternates', sans-serif;
     margin-bottom: 0;
+    font-size: 1.5vw;
 }
 
 .all_posts .post_author {
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 1vw;
     padding: 0.5rem 0;
     border-bottom: 1px solid #999999;
 }
 
 .all_posts .post {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 1.2vw;
     padding: 5px;
 }
 
@@ -122,13 +163,17 @@ body {
 }
 
 .top_blogger h4 {
-    font-size: 15px;
+    font-size: 1.1vw;
     margin: 0;
+    color: lightsalmon;
+    text-shadow: 2px 1px black;
+
 }
 
 .top_blogger p {
-    color: darkred;
+    color: hotpink;
     margin: 0;
+
 
 }
 
