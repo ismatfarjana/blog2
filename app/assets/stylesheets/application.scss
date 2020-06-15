@@ -76,7 +76,6 @@ a:hover {
     text-shadow: 0.5rem 0.5rem black;
     font-family: 'Metal Mania', cursive;
     font-size: 3rem;
-    /*text-align: center;*/
     margin: 0 0 0 10vw;
     padding: 20px 0 10px 10px;
 
@@ -93,10 +92,7 @@ a:hover {
 
 }
 
-@keyframes slide {
-  from{transform: translateX(0px);}
-  to{transform: translateX(900px);}
-}
+
 
 .ladybug {
   top: 80px;
@@ -273,9 +269,10 @@ a:hover {
     color: lightsalmon;
 }
 .sign_up_page_body {
-    margin: 3rem 5rem;
-    padding: 2rem 5rem;
-    background-color: rgba(194, 210, 225, 0.6);
+
+    margin: 5rem 20rem;
+    padding: 1rem 1rem;
+    background-color: RGBA(153, 200, 203, 0.8);
 }
 
 .sign_up_page h1 {
@@ -283,6 +280,7 @@ a:hover {
     font-family: 'Metal Mania', cursive;
     font-size: 3vw;
     color: lightsalmon;
+
 }
 
 
@@ -294,11 +292,22 @@ a:hover {
     height: auto;
 }
 
-.actions .button:hover {
 
+
+.line p {
+  margin: 0 0;
+  color: navajowhite;
+  text-shadow: 1px 1px black;
 }
 
 footer {
  color: #CCCCCC;
  padding: 1.5rem 1rem;
+}
+
+
+
+@keyframes slide {
+  from{transform: translateX(0px);}
+  to{transform: translateX(900px);}
 }
