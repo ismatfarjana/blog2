@@ -27,6 +27,7 @@
 
 body {
     background-image: image-url("background_flower.JPG");
+
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
@@ -72,15 +73,54 @@ a:hover {
 .top_heading h1 {
     color: whitesmoke;
     text-align: left;
-    text-shadow: 1px 1px black;
+    text-shadow: 0.5rem 0.5rem black;
     font-family: 'Metal Mania', cursive;
     font-size: 3rem;
     /*text-align: center;*/
     margin: 0 0 0 10vw;
     padding: 20px 0 10px 10px;
+
+  position: relative;
+  transition: background 0.5s ease-in, transform .10s .10s  ease-out;
+  perspective: 1000PX;
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+
 }
 
+@keyframes slide {
+  from{transform: translateX(0px);}
+  to{transform: translateX(900px);}
+}
 
+.ladybug {
+  top: 80px;
+  width: 1px;
+  height: 1px;
+  position: relative;
+  opacity: 100%;
+  transition: background 0.5s ease-in, transform .5s .25s  ease-in-out;
+  perspective: 1000PX;
+  animation-name: drift;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-direction: unset;
+  animation-play-state: running;
+}
+
+@keyframes drift {
+  from{transform: translateX(-9vw);}
+  to{transform: translateX(100vw);}
+
+}
 
 .top_heading p {
     margin: 0 10rem;
@@ -97,7 +137,7 @@ a:hover {
     margin-left:10rem;
     margin-right:10rem;
     padding: 1rem 9rem;
-    background-color: RGBA(153,200,203,0.29);
+    background-color: RGBA(153, 200, 203, 0.29);
 
 }
 .all_posts:hover {
@@ -204,8 +244,8 @@ a:hover {
 }
 
 .top_blogger p {
-    color: black;
-    text-shadow: 1px 1px navajowhite;
+    color: navajowhite;
+    text-shadow: 1px 1px black;
     margin: 0;
 
 
@@ -259,6 +299,6 @@ a:hover {
 }
 
 footer {
-
+ color: #CCCCCC;
  padding: 1.5rem 1rem;
 }
